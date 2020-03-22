@@ -2,16 +2,16 @@
 class Oictl < Formula
   desc ""
   homepage ""
-  version "0.10.0"
+  version "0.11.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/open-integration/oictl/releases/download/0.10.0/oictl_0.10.0_Darwin_x86_64.tar.gz"
-    sha256 "c366d4c06462605d4cb07e4d66e86423e7b512292777686e323af07cfff6a354"
+    url "https://github.com/open-integration/oictl/releases/download/0.11.0/oictl_0.11.0_Darwin_x86_64.tar.gz"
+    sha256 "fbe30d652bd48c81c0bfaf0ccd871efce28a7e92bf598853224ec57b49baa8e5"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/open-integration/oictl/releases/download/0.10.0/oictl_0.10.0_Linux_x86_64.tar.gz"
-      sha256 "24564862d37ad7598971f3a7396d6d12e72a1abaefd84a9750ad36414bd99997"
+      url "https://github.com/open-integration/oictl/releases/download/0.11.0/oictl_0.11.0_Linux_x86_64.tar.gz"
+      sha256 "04aad1c17757ca2df1f00462738fd6fc4c8a0dca409c6780007f40debeae9ae8"
     end
   end
   
