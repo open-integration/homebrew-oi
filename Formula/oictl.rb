@@ -2,22 +2,22 @@
 class Oictl < Formula
   desc ""
   homepage ""
-  version "0.8.0"
+  version "0.10.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/open-integration/oictl/releases/download/0.8.0/oictl_0.8.0_Darwin_x86_64.tar.gz"
-    sha256 "18a263d10fbf084dc80c351d86bc41e2098161bb8880e93d739efd4c5c31464a"
+    url "https://github.com/open-integration/oictl/releases/download/0.10.0/oictl_0.10.0_Darwin_x86_64.tar.gz"
+    sha256 "c366d4c06462605d4cb07e4d66e86423e7b512292777686e323af07cfff6a354"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/open-integration/oictl/releases/download/0.8.0/oictl_0.8.0_Linux_x86_64.tar.gz"
-      sha256 "9e47d52c63012b77a42420ac77f352ffc9214c939b9e87e30c2ee50bbeecd0db"
+      url "https://github.com/open-integration/oictl/releases/download/0.10.0/oictl_0.10.0_Linux_x86_64.tar.gz"
+      sha256 "24564862d37ad7598971f3a7396d6d12e72a1abaefd84a9750ad36414bd99997"
     end
   end
   
   depends_on "quicktype"
 
   def install
-    bin.install "ioctl"
+    bin.install "oictl"
   end
 end
