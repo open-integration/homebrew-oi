@@ -5,24 +5,24 @@
 class Oi < Formula
   desc ""
   homepage ""
-  version "0.77.0"
+  version "0.81.0"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/open-integration/oi/releases/download/v0.77.0/oi_0.77.0_Darwin_x86_64.tar.gz"
-    sha256 "90e96dba655d8fa369f3acd334db9fce38956090dc7b7ff1c8d16952865a302b"
+    url "https://github.com/open-integration/oi/releases/download/v0.81.0/oi_0.81.0_Darwin_x86_64.tar.gz"
+    sha256 "980ceceb84ee3d0d59863b6c5a4f001b1e07ce68159e32252c123ee976935218"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/open-integration/oi/releases/download/v0.77.0/oi_0.77.0_Darwin_arm64.tar.gz"
-    sha256 "a2b9de60d32bf5f3ab7b18e194926eada1d816b14b9ae81fb03e1aa52e1eac0a"
+    url "https://github.com/open-integration/oi/releases/download/v0.81.0/oi_0.81.0_Darwin_arm64.tar.gz"
+    sha256 "5c6c4a8ee52410f7380918efcd784f15bdab032e7fdbdce7483fe06bac992f54"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/open-integration/oi/releases/download/v0.77.0/oi_0.77.0_Linux_x86_64.tar.gz"
-    sha256 "e42d501cfa49aa52aa5b485460d3c78440a54747d5c6ca663975c394fff6104e"
+    url "https://github.com/open-integration/oi/releases/download/v0.81.0/oi_0.81.0_Linux_x86_64.tar.gz"
+    sha256 "b4e0267e101a8bbf797e47f9f4f901f3f27c8abea2653e52e2b5351a915d0bb0"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/open-integration/oi/releases/download/v0.77.0/oi_0.77.0_Linux_arm64.tar.gz"
-    sha256 "72b300a1d6c2981156d973d925688979a5b1bee16e442aba37586b6bc8245729"
+    url "https://github.com/open-integration/oi/releases/download/v0.81.0/oi_0.81.0_Linux_arm64.tar.gz"
+    sha256 "56f555b65f7f0c6c0bd8e70b89a97198d102ea9ac3a5f44650c3c46ffb2566c5"
   end
 
   def install
